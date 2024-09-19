@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    pad: 0;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.main{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(197, 131, 197);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-color: lavender;
+    height: 70%;
+    width: 75%;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 2px solid purple;
+}
+
+.top{
+    height: 70px;
+    width: 100%;
+    background-color: rgb(121, 172, 230);
+    border-bottom: 2px solid purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.bottom{
+    height: calc(100% - 70px);
+    width: 100%;
+    /* background-color: black; */
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    /* padding: 10px 0px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.elem{
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.elem .box{
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    border-radius: 3px;
+}
+
+.bubble{
+    height: 50px;
+    width: 50px;
+    background-color: purple;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 10px;
+    cursor: pointer;
+    &:hover{
+        background-color: rgb(236, 6, 64);
+    }
+}
